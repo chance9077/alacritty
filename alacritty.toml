@@ -1,7 +1,9 @@
 import = ["/Users/wangquanjiang/.config/alacritty/themes/dracula.toml"]
 
 [font]
-size = 14.0
+normal = { family = "FiraCode Nerd Font", style = "Retina" }
+bold = { family = "FiraCode Nerd Font", style = "Medium" }
+size = 15.0
 
 [font.glyph_offset]
 x = 0
@@ -9,7 +11,7 @@ y = 2
 
 [font.offset]
 x = 0
-y = 4
+y = 6
 
 [[keyboard.bindings]]
 action = "ToggleSimpleFullscreen"
@@ -17,9 +19,15 @@ key = "Equals"
 mods = "Command"
 
 [window]
-dynamic_padding = false
-opacity = 0.95
+dynamic_padding = true
+opacity = 1
+decorations = "Transparent"
 
 [window.padding]
-x = 10
-y = 5
+x = 5
+y = 22
+
+[cursor]
+style = { shape = "Block", blinking = "Always" }
+blink_interval = 600
+blink_timeout = 0
